@@ -1,0 +1,10 @@
+<section class="count-words">
+    <div class="count-words__content">
+        <form [formGroup]="checkText" (ngSubmit)="onSubmit(checkText.value)">
+            <h4>Put text below:</h4>
+            <input type="text" formControlName="countText">
+            <button type="submit">Calculate words in text</button>
+        </form>
+    </div>
+    <canvas id="resultChart" class="count-words__content__chart" width="700" height="400"></canvas>
+</section>
